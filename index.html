@@ -1,92 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>John Ndeh-Zama | Cloud Resume</title>
+
+  <style>
+
+    body {
+      background-color: #0f172a;
+      color: white;
+      font-family: Arial, sans-serif;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #38bdf8;
+      font-size: 52px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #7dd3fc;
+      margin-top: 40px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 10px;
+      font-size: 40px;
+    }
+
+    h3 {
+      color: #e2e8f0;
+      font-size: 30px;
+    }
+
+    p,
+    li {
+      line-height: 1.8;
+      color: #e2e8f0;
+      font-size: 24px;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    .card,
+    .project-card {
+      background-color: #1e293b;
+      padding: 25px;
+      border-radius: 14px;
+      margin-top: 20px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover,
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
+    }
+
+    .top-section {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+
+    .highlight {
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    .button-row,
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #0f172a;
+      background-color: #38bdf8;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
+    }
+
+    .hero-text {
+      color: #94a3b8;
+      font-size: 26px;
+      margin-top: 20px;
+      line-height: 1.7;
+    }
+
+    .tech-stack span,
+    .tag {
+      background-color: #334155;
+      color: #7dd3fc;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #94a3b8;
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+
+      body {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        font-size: 18px;
+      }
+
+      .hero-text {
+        font-size: 20px;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 <body>
-  <h1>John Ndeh-Zama</h1>
-  <p>Bowie, MD | johnzama08@gmail.com | Previously held DoD Secret Clearance</p>
 
-  <h2>Cloud Engineer | DevSecOps | AWS | Cybersecurity</h2>
-  <p>
-    Security-cleared Cloud and DevSecOps Engineer with hands-on experience supporting AWS environments in DoD-focused operations.
-    Experienced with AWS cloud services, infrastructure automation, Linux administration, security compliance, Docker, Terraform,
-    CI/CD, and Infrastructure as Code.
-  </p>
+  <div class="top-section">
 
-  <h2>Technical Skills</h2>
+    <img src="profile.png" alt="John Zama profile photo" class="profile-pic">
 
-  <h3>Cloud & Infrastructure</h3>
-  <p>AWS EC2, S3, Lambda, IAM, VPC, CloudFormation, Glue, Athena, CloudWatch, CloudTrail, RDS, Terraform, Linux Administration</p>
+    <div>
 
-  <h3>DevOps & Automation</h3>
-  <p>Docker, Jenkins, Git, GitHub, GitHub Actions, Ansible, Kubernetes Foundational Knowledge, Bash, Python, YAML</p>
+      <h1>John Ndeh-Zama</h1>
 
-  <h3>Security & Compliance</h3>
-  <p>DISA STIGs, NIST 800-53, IAM Policy Management, Security+, Cloud Security, Vulnerability Assessment, OpenVAS, Wireshark</p>
+      <p>
+        Bowie, MD |
+        johnzama08@gmail.com |
+        Previously Held DoD Secret Clearance
+      </p>
 
-  <h3>Networking</h3>
-  <p>TCP/IP, DNS, VPNs, LAN/WAN, Routing & Switching, Cisco Networking, Firewalls, Secure Communications</p>
+      <h2>Cloud Engineer | DevSecOps | AWS | Cybersecurity</h2>
 
-  <h2>Professional Experience</h2>
+      <div class="button-row">
 
-  <h3>Cloud Engineer / DevSecOps</h3>
-  <p><strong>Trillion Technology Solutions — DISA Support</strong> | Oct 2024 – Apr 2025</p>
-  <ul>
-    <li>Supported AWS cloud infrastructure and data governance operations in a DISA environment.</li>
-    <li>Worked with EC2, S3, Glue, Lambda, Athena, CloudFormation, IAM, and CloudWatch.</li>
-    <li>Assisted with cloud automation, data workflows, and infrastructure provisioning using Infrastructure as Code principles.</li>
-    <li>Participated in STIG-compliant cloud operations and security-focused configuration management.</li>
-    <li>Supported monitoring, logging, and cloud governance initiatives within AWS environments.</li>
-  </ul>
+        <a href="https://github.com/johnzama"
+           target="_blank"
+           class="btn">
+           GitHub
+        </a>
 
-  <h3>Information Technology Specialist (25B)</h3>
-  <p><strong>DC Army National Guard — Washington, DC</strong> | Jun 2021 – Jun 2024</p>
-  <ul>
-    <li>Maintained secure network infrastructure for military operations and administrative systems.</li>
-    <li>Configured and troubleshot networking equipment, secure communications systems, and user connectivity issues.</li>
-    <li>Performed system hardening and security compliance procedures aligned with DoD standards.</li>
-    <li>Assisted with COMSEC handling and secure communications operations.</li>
-  </ul>
+        <a href="https://www.linkedin.com/in/john-zama-013b61304/"
+           target="_blank"
+           class="btn">
+           LinkedIn
+        </a>
 
-  <h3>Signal Support Systems Specialist (25U)</h3>
-  <p><strong>Oklahoma Army National Guard — Oklahoma</strong> | Jun 2018 – Jun 2021</p>
-  <ul>
-    <li>Installed and maintained tactical communications systems, secure radios, and network equipment.</li>
-    <li>Supported field communications infrastructure and secure operational connectivity.</li>
-    <li>Performed troubleshooting and maintenance on communication systems and networking hardware.</li>
-  </ul>
+        <a href="resume.pdf"
+           download
+           class="btn">
+           Download Resume
+        </a>
 
-  <h2>Projects</h2>
+      </div>
 
-  <h3>Cloud Resume DevOps Project</h3>
-  <ul>
-    <li>Built a cloud-hosted resume website using HTML, Docker, GitHub, Terraform, and AWS.</li>
-    <li>Containerized the web application using Docker.</li>
-    <li>Implemented Infrastructure as Code concepts for cloud deployment.</li>
-  </ul>
+      <p class="hero-text">
+        Building secure cloud infrastructure, automation workflows,
+        and DevSecOps solutions using AWS, Docker, Linux,
+        GitHub, Infrastructure as Code, and cybersecurity best practices.
+      </p>
 
-  <h3>AWS Infrastructure Automation Lab</h3>
-  <ul>
-    <li>Provisioned AWS infrastructure using Terraform and CloudFormation.</li>
-    <li>Configured EC2 instances, security groups, and networking resources.</li>
-    <li>Practiced Infrastructure as Code concepts and automated deployments.</li>
-  </ul>
+      <div class="tech-stack">
+        <span>☁️ AWS</span>
+        <span>🐳 Docker</span>
+        <span>🐧 Linux</span>
+        <span>⚙️ DevSecOps</span>
+        <span>🔐 Security</span>
+        <span>📦 GitHub</span>
+        <span>🪖 DoD</span>
+        <span>🔒 Clearance</span>
+      </div>
 
-  <h2>Education</h2>
-  <p><strong>Bachelor of Science in Cybersecurity</strong><br />
-  University of Maryland Global Campus | Graduated May 2026</p>
+    </div>
 
-  <h2>Certifications</h2>
-  <ul>
-    <li>AWS Certified Solutions Architect – Associate</li>
-    <li>AWS Certified Cloud Practitioner</li>
-    <li>CompTIA Security+</li>
-  </ul>
+  </div>
 
-  <h2>Clearance</h2>
-  <p>Eligible for Secret Clearance</p>
+  <div class="card">
+
+    <p>
+      Security-cleared Cloud and DevSecOps Engineer with hands-on experience supporting AWS environments,
+      Linux administration, infrastructure automation, containerization, cloud governance,
+      and cybersecurity operations. Experienced with CI/CD workflows,
+      Infrastructure as Code, STIG compliance, cloud monitoring,
+      and secure system administration.
+    </p>
+
+  </div>
+
+  <h2>🚀 Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+
+      <h3>Dockerized Cloud Resume</h3>
+
+      <p>
+        Built and containerized a responsive cloud resume portfolio
+        using Docker, NGINX, Linux, GitHub, and HTML/CSS.
+      </p>
+
+      <span class="tag">Docker</span>
+      <span class="tag">NGINX</span>
+      <span class="tag">Linux</span>
+
+    </div>
+
+    <div class="project-card">
+
+      <h3>AWS Data Governance Pipeline</h3>
+
+      <p>
+        Designed secure cloud workflow concepts using S3, Glue,
+        Lambda, Athena, IAM, and CloudWatch for data governance and monitoring.
+      </p>
+
+      <span class="tag">AWS</span>
+      <span class="tag">S3</span>
+      <span class="tag">Glue</span>
+
+    </div>
+
+    <div class="project-card">
+
+      <h3>DevSecOps Infrastructure Lab</h3>
+
+      <p>
+        Practiced Infrastructure as Code, security hardening,
+        container workflows, cloud automation,
+        and CI/CD pipeline concepts.
+      </p>
+
+      <span class="tag">DevSecOps</span>
+      <span class="tag">CI/CD</span>
+      <span class="tag">Security</span>
+
+    </div>
+
+  </div>
+
+  <h2>⚡ Technical Skills</h2>
+
+  <div class="card">
+
+    <h3>Cloud & Infrastructure</h3>
+
+    <p>
+      AWS EC2, S3, Lambda, IAM, VPC, CloudFormation,
+      Glue, Athena, CloudWatch, CloudTrail
+    </p>
+
+    <h3>DevOps & Automation</h3>
+
+    <p>
+      Docker, Jenkins, Git, GitHub,
+      GitHub Actions, Ansible,
+      Kubernetes Foundational Knowledge
+    </p>
+
+    <h3>Security & Compliance</h3>
+
+    <p>
+      DISA STIGs, NIST 800-53,
+      IAM Policy Management,
+      Security+, Cloud Security
+    </p>
+
+    <h3>Networking</h3>
+
+    <p>
+      TCP/IP, DNS, VPNs, LAN/WAN,
+      Routing & Switching,
+      Cisco Networking, Firewalls
+    </p>
+
+  </div>
+
+  <h2>💼 Professional Experience</h2>
+
+  <div class="card">
+
+    <h3>Cloud Engineer / DevSecOps</h3>
+
+    <p>
+      <span class="highlight">Trillion Technology Solutions – DISA Support</span>
+      |
+      Oct 2024 – Apr 2025
+    </p>
+
+    <ul>
+      <li>AWS Cloud Infrastructure, S3, EC2, Lambda, Glue, Athena, IAM, CloudFormation</li>
+      <li>Cloud Governance, Security Compliance, STIGs, NIST 800-53, IAM Policies</li>
+      <li>Infrastructure as Code, Automation, Data Pipelines, Cloud Monitoring</li>
+      <li>CloudWatch, CloudTrail, Access Control, Secure Configuration Management</li>
+      <li>DevSecOps workflows, CI/CD concepts, Linux, Git, Docker, AWS security best practices</li>
+    </ul>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Information Technology Specialist (25B)</h3>
+
+    <p>
+      <span class="highlight">DC Army National Guard</span>
+      |
+      Jun 2021 – Jun 2024
+    </p>
+
+    <ul>
+      <li>Network Administration, Systems Support, Help Desk Operations, Troubleshooting</li>
+      <li>Windows/Linux Systems, Account Management, Active Directory, User Access Control</li>
+      <li>Cybersecurity Compliance, System Hardening, Patch Management, DoD IT Standards</li>
+      <li>LAN/WAN Support, Switches, Routers, VPNs, Secure Communications</li>
+      <li>Technical Documentation, Incident Response Support, Mission-Critical IT Operations</li>
+    </ul>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Signal Support Systems Specialist (25U)</h3>
+
+    <p>
+      <span class="highlight">Army National Guard</span>
+      |
+      Jun 2018 – Jun 2021
+    </p>
+
+    <ul>
+      <li>Tactical Communications, Radio Systems, Network Connectivity, Signal Operations</li>
+      <li>Satellite Communications, Secure Voice/Data Systems, Field Network Support</li>
+      <li>Equipment Configuration, Preventive Maintenance, Troubleshooting</li>
+      <li>Operational Security, Communications Security, Mission Support</li>
+      <li>Team Collaboration, Technical Training, Field IT Support</li>
+    </ul>
+
+  </div>
+
+  <h2>🪖 Military Service</h2>
+
+  <div class="card">
+
+    <h3>United States Army National Guard</h3>
+
+    <p>
+      Served in military IT, cybersecurity, and communications roles supporting mission-critical infrastructure,
+      secure communications, and operational readiness.
+    </p>
+
+    <ul>
+      <li>10 years of military service experience</li>
+      <li>Previously Held DoD Secret Clearance</li>
+      <li>Mission-critical systems and communications support</li>
+      <li>Leadership, operational discipline, and team coordination</li>
+      <li>Cybersecurity-focused and security-compliant environments</li>
+      <li>Experience supporting high-tempo operational environments</li>
+    </ul>
+
+  </div>
+
+  <h2>🧠 Core Competencies</h2>
+
+  <div class="card">
+
+    <p>
+      Cloud Infrastructure • AWS • DevSecOps • Linux Administration • Docker • Cybersecurity •
+      STIG Compliance • Infrastructure as Code • Networking • Automation • IAM •
+      Security Operations • CI/CD • Cloud Governance • Technical Troubleshooting
+    </p>
+
+  </div>
+
+  <h2>📚 Currently Learning</h2>
+
+  <div class="card">
+
+    <ul>
+      <li>Terraform Infrastructure Automation</li>
+      <li>Kubernetes & Container Orchestration</li>
+      <li>CI/CD Pipeline Automation</li>
+      <li>Advanced AWS Security & Governance</li>
+      <li>Cloud-Native DevSecOps Engineering</li>
+    </ul>
+
+  </div>
+
+  <h2>🏆 Certifications</h2>
+
+  <div class="card">
+
+    <ul>
+      <li>AWS Certified Solutions Architect – Associate</li>
+      <li>AWS Certified Cloud Practitioner</li>
+      <li>CompTIA Security+</li>
+    </ul>
+
+  </div>
+
+  <h2>🎓 Education</h2>
+
+  <div class="card">
+
+    <p>
+      <span class="highlight">University of Maryland Global Campus (UMGC)</span><br>
+      Bachelor’s Degree in Cybersecurity Technology
+    </p>
+
+  </div>
+
+  <footer>
+
+    <p>
+      Built by John Ndeh-Zama using Docker, NGINX, HTML/CSS, Linux,
+      and AWS-focused DevSecOps concepts.
+    </p>
+
+  </footer>
+
 </body>
+
 </html>
